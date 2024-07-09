@@ -2,9 +2,9 @@
 ### Step - 0:  Get the code and files
 
 ```
-git clone https://gitlab.xbiome.com/RavinP/x-sim.git
+https://github.com/ravinpoudel/smilesSimilarity.git
 
-cd x-sim
+cd smilesSimilarity
 
 ```
 
@@ -68,7 +68,7 @@ docker run -v $PWD:/data xsim:latest -i test_input.csv --rd2path DRUGSMIL_smallm
 ```
 
 source ~/anaconda3/etc/profile.d/conda.sh
-conda activate /share/home/dhrithi/anaconda3/envs/my-rdkit-env
+conda activate /share/home/ravin/anaconda3/envs/my-rdkit-env
 
 python main.py -i test_input.csv --rd2path DRUGSMIL_smallmol_TTD_tiny.txt --rd3_PDBpath ../ref/tiny_MOAD_pdb/ --rd3_SDFpath ../ref/tiny_SM_TTD_sdf/ --type pdb --outdir test_outdir
 python main.py -i test_input.csv --rd2path DRUGSMIL_smallmol_TTD_tiny.txt --rd3_PDBpath ../ref/tiny_MOAD_pdb/ --rd3_SDFpath ../ref/tiny_SM_TTD_sdf/ --type sdf --outdir test_outdir
